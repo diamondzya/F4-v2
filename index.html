@@ -3,14 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dedrick Portforlio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>
-        .......test
-    </p>
-    <SVG>
-        
-    </SVG>
+    <header>
+        <h1>PORTFOLIO KO</h1>
+        <p>PAALAM</p>
+        <svg width="150" height="150">
+            <circle cx="80" cy="80" r="50" fill="purple" stroke="black" stroke-width="3" />
+        </svg>
+    </header>
+ 
+    <section>
+        <h2>Skills</h2>
+        <p>Mag computer/mag roblox:</p>
+        <progress value="100" max="100"></progress>
+        <p>CSS Learning Progress:</p>
+        <progress value="0" max="100"></progress>
+        <p>JavaScript Learning Progress:</p>
+        <progress value="0" max="100"></progress>
+        <p>HTML Learning Progress:</p>
+        <progress value="58" max="100"></progress>
+
+    </section>
+ 
+    <section>
+        <h2>Search Example</h2>
+        <label for="tools">Web tool:</label>
+        <input id="tools" type="text" list="webtools" placeholder="Choose a tool">
+        <datalist id="webtools">
+            <option value="Visual Studio Code">
+            <option value="Sublime Text">
+            <option value="Figma">
+            <option value="GitHub">
+        </datalist>
+    </section>
+ 
+    <section>
+        <h2>Contact Me</h2>
+        <form autocomplete="off" action="#">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus>
+ 
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@example.com" required>
+ 
+            <label for="url"></label> Website:</label>
+            <input type="url" id="url" name="url" placeholder="https://example.com">
+ 
+            <label for="tel">PNumber:</label>
+            <input type="tel" id="tel" name="tel" placeholder="09636244200">
+ 
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Message" required></textarea>
+ 
+            <input type="submit" value="Send">
+        </form>
+    </section>
 </body>
 </html>
