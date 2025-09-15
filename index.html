@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VELASCO PROJECT</title>
+</head>
+<body>
+    <header>
+    <h1>MY PORTFOLIO</h1>
+ <p>My HTML5 practice project!</p>
+ <svg height="140" width="500" xmlns="http://www.w3.org/2000/svg">
+  <ellipse rx="100" ry="50" cx="120" cy="80"
+  style="fill:rgb(255, 0, 0);stroke:rgb(5, 5, 5);stroke-width:3" />
+</svg>
+ </header>
+<section>
+<h2>My Skills Progress</h2>
+<p>HTML5 Learning Progress:</p>
+<progress value="40" max="100"></progress>
+<p>CSS Learning Progress:</p>
+<progress value="20" max="100"></progress>
+<p>JavaScript Learning Progress:</p>
+<progress value="4" max="100"></progress>
+</section>
+<section>
+<h2>Search Example</h2>
+<label for="tools">Your favorite Web tool:</label>
+<input id="tools" type="text" list="webtools" placeholder="Pick or choose your favorite tool">
+<datalist id="webtools">
+<option value="Visual Studio Code">
+<option value="Subline Text">
+<option value="Figma">
+<option value="Github">
+</datalist>
+<section>
+        <h2>Approach me</h2>
+        <form autocomplete="off" action="#">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus>
+ 
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="youremail@example.com" required>
+ 
+            <label for="url">Portfolio Website:</label>
+            <input type="url" id="url" name="url" placeholder="https://igop.com">
+ 
+            <label for="tel">Phone Number:</label>
+            <input type="tel" id="tel" name="tel" placeholder="123-456-7890">
+ 
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Dito lang aku chat mo nalang aku" required></textarea>
+    </form>
+ </body>
+</html>
