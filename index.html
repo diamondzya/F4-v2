@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <Tittle>Tittle</Tittle>
-
-  
+    <Tittle>Tittle</Tittle> 
 </head>
 <body>
-    <input type="password">
+    <header>
+    <h1>MY PORTFOLIO</h1>
+ <p>Welcome to my HTML5 practice project!</p>
+ <svg width="150" height="150">
+    <circle  cx="50" cy="50" r="50" fill="rgb"stroke="White" strokewidth="20"/>
+ </svg>
+ </header>
+<section>
+<h2>My Skills Progress</h2>
+<p>HTML5 Learning Progress:</p>
+<progress value="22" max="100"></progress>
+<p>CSS Learning Progress:</p>
+<progress value="0" max="100"></progress>
+<p>JavaScript Learning Progress:</p>
+<progress value="10" max="100"></progress>
+</section>
+</section>
+<section>
+<h2>Search Example:</h2>
+<label for="tools">Mga Larong linalaro ko:</label>
+<input id="tools" type="text" list="webtools" placeholder="━━━━━━━━━━━>">
+<datalist id="webtools">
+<option value="Minecraft Java/Bedrock">
+<option value="Rivals - Roblox">
+<option value="Geometry Dash">
+<option value="Mobile Legends">
+<option value="Clash Of Clans">
+<option value="FR Legends">
+</datalist> 
+</section>
+
+<h2>Contact Me</h2>
+<form autocomplete="off">
+    <label for="name">Full Name:</label>
+    <input type="Text" id="name" name="name" placeholder="Enter your name" required autofocus>
+    <br>  </br>
+    <label for="email">Email Adress</label>
+    <input type="emal" id="email" name="email" placeholder="PogisiTanate.696969@ortigas-cainta.sti.edu.ph" required>
+    <br>  </br>
+    <label for="url">Portfolio Website</label>
+    <input type="url" id="url" name="url" placeholder="https://Tanate.com">
+    <br>  </br>
+    <label for="tel">Phone Number:</label>
+    <input type="tel" id="tel" name="tel" placeholder="8700">
+    <br>  </br>
+    <label for="Message">Message:</label>
+    <textarea id="message" name="message" placeholder="Maybe that's why we met early, Because we will never grow old together" required autofocus></textarea>
+ 
+        <input type="submit" value="send">
+    </form>
 </body>
 </html>
