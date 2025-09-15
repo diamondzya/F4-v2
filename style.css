@@ -1,0 +1,16 @@
+body
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.svg-container
+{
+    background-color: aquamarine;
+}
+
+.contact-form
+{
+    margin-top: 10px;
+}
