@@ -8,18 +8,18 @@
 </head>
 <body>
     <header>
-        <h1>F4 - VERSION 2</h1>
+        <h1>F4</h1>
     </header>
 
-    <section>
+    <section class="svg-container">
         <!-- Cyrus -->
         <div class="container">
-            <h2>Cyrus - Abstract Flame</h2>
+            <h2>Cyrus</h2>
             <svg width="300" height="300" viewBox="0 0 200 200">
                 <polygon 
                     points="100,20 130,60 160,40 170,90 190,140 140,180 100,160 60,180 10,140 30,90 40,40 70,60" 
                     fill="url(#grad1)" 
-                    stroke="white" 
+                    stroke="black" 
                     stroke-width="3"/>
                 <defs>
                     <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -29,32 +29,69 @@
                     </linearGradient>
                 </defs>
             </svg>
+            <h3>Abstract Flame</h3>
         </div>
 
         <!-- Joshua -->
         <div class="container">
-            <h2>Joshua - Ellipse</h2>
-            <svg height="140" width="300" xmlns="http://www.w3.org/2000/svg">
-                <ellipse rx="100" ry="50" cx="150" cy="70" 
-                         style="fill:red; stroke:black; stroke-width:3;" />
+            <h2>Joshua</h2>
+            <svg height="300" width="300" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <ellipse rx="90" ry="50" cx="100" cy="100" 
+                style="fill:red; stroke:black; stroke-width:3;" />
             </svg>
+            <h3>Ellipse</h3>
         </div>
-
+    </section>
+    <section class="svg-container">
         <!-- Alexis -->
         <div class="container">
-            <h2>Alexis - Circle</h2>
-            <svg width="150" height="150">
-                <circle cx="75" cy="75" r="60" stroke="white" stroke-width="5" fill="blue"/>
+            <h2>
+                Alexis
+            </h2>
+            <svg width="300" height="300">
+                <circle cx="60" cy="65" r="50" stroke="white" stroke-width="5" fill="rgb"/>
             </svg>
+            <h3>Circle</h3>
         </div>
 
         <!-- Dedrick -->
         <div class="container">
-            <h2>Dedrick - Star</h2>
-            <svg>
-                <circle cx="80" cy="80" r="50" fill="purple" stroke="black" stroke-width="3"/>
+            <h2>Dedrick</h2>
+            <svg width="300" height="300" >
+                <circle cx="60" cy="60" r="50" fill="purple" stroke="black" stroke-width="3"/>
             </svg>
+            <h3>Circle</h3>
         </div>
+    </section>
+    <section class="contact-form">
+        <h2>Contact Form</h2>
+        <form action="" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="example@gmail.com" autofocus>
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required placeholder="password">
+            <br><br>
+
+            <label for="contact">Contact:</label>
+            <input type="tel" id="contact" name="contact" required placeholder="0000-000-000">
+            <br><br>
+
+            <label for="url">Website:</label>
+            <input type="url" id="url" name="url" required placeholder="https://example.com" >
+
+            <h3>Search</h3>
+            <input list="suggestions" type="search" placeholder="Search...">
+            <datalist id="suggestions">
+                <option value="C++">
+                <option value="Java">
+                <option value="HTML">
+                <option value="CSS">
+                <option value="JavaScript">
+            </datalist>
+            <input type="submit" value="Submit">
+        </form>
     </section>
 </body>
 </html>

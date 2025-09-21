@@ -1,37 +1,77 @@
-body {
+body
+{
     font-family: Arial, sans-serif;
-    background-color: #beafaf;
+    margin: 0;
+    padding: 0;
+    background-color: #d6a8c4;
     
 }
 
-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    background-color: rgb(63, 100, 100);
-    border: 10px solid rgb(255, 180, 42);
-    padding: 20px;
-    width: 15%;
-}
 
-.container {
-    background-color: white;
-    border: 2px solid black;
+header h1
+{
+    margin: 0;
+    font-size: 2.5em;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* center horizontally */
-    justify-content: center; /* center vertically */
     text-align: center;
-    
+    background-color: #9e6899;
+    margin-bottom: 50px;
+    color: white;
+    width: 100%;
+
 }
 
-svg {
-    max-width: 200px;
-    max-height: 200px;
-    border: 2px solid black;
-    background-color: lightgray;
-    display: block;
-    margin: 10px auto;
+h2
+{
+    color : black
+}
+.svg-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     
+    justify-items: center;
+    align-items: center;
+    background-color: #9e6899;
+    border: 3px solid #5b3765;
+    padding: 20px;
+    width: 30%;
+    margin: 12px auto;
+}   
+
+.container
+{
+    text-align: center;
+    width: 100%;
+    max-width: 200px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover
+{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+svg
+{
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: linear-gradient(135de, #5b3765, #b0b0b0);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+svg:hover
+{
+    transform: scale(1.1) rotate(5deg);
+    background: linear-gradient(135deg, #BA88AE, #9E6899);
+    cursor: pointer;
 }
