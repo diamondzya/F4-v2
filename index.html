@@ -1,97 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F4 - VERSION 2</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F4 - VERSION 3</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>F4</h1>
-    </header>
+  <header>
+    <h1 class="grp">F4</h1>
+  </header>
 
-    <section class="svg-container">
-        <!-- Cyrus -->
-        <div class="container">
-            <h2>Cyrus</h2>
-            <svg width="300" height="300" viewBox="0 0 200 200">
-                <polygon 
-                    points="100,20 130,60 160,40 170,90 190,140 140,180 100,160 60,180 10,140 30,90 40,40 70,60" 
-                    fill="url(#grad1)" 
-                    stroke="black" 
-                    stroke-width="3"/>
-                <defs>
-                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="25%" style="stop-color:#ff0000; stop-opacity:1" />
-                        <stop offset="50%" style="stop-color:#ff9900; stop-opacity:1" />
-                        <stop offset="100%" style="stop-color:#ffff00; stop-opacity:1" />
-                    </linearGradient>
-                </defs>
-            </svg>
-            <h3>Abstract Flame</h3>
-        </div>
+  <!-- SVG Section -->
+  <section class="svg-container">
+    <!-- Cyrus -->
+    <div class="container">
+      <h2>Cyrus</h2>
+      <svg viewBox="0 0 200 200">
+        <polygon 
+          points="100,20 130,60 160,40 170,90 190,140 140,180 100,160 60,180 10,140 30,90 40,40 70,60" 
+          fill="url(#grad1)" 
+          stroke="black" 
+          stroke-width="3"/>
+        <defs>
+          <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="25%" style="stop-color:#ff0000; stop-opacity:1" />
+            <stop offset="50%" style="stop-color:#ff9900; stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#ffff00; stop-opacity:1" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <h3>Abstract Flame</h3>
+    </div>
 
-        <!-- Joshua -->
-        <div class="container">
-            <h2>Joshua</h2>
-            <svg height="300" width="300" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                <ellipse rx="90" ry="50" cx="100" cy="100" 
-                style="fill:red; stroke:black; stroke-width:3;" />
-            </svg>
-            <h3>Ellipse</h3>
-        </div>
-    </section>
-    <section class="svg-container">
-        <!-- Alexis -->
-        <div class="container">
-            <h2>
-                Alexis
-            </h2>
-            <svg width="300" height="300">
-                <circle cx="60" cy="65" r="50" stroke="white" stroke-width="5" fill="rgb"/>
-            </svg>
-            <h3>Circle</h3>
-        </div>
+    <!-- Joshua -->
+    <div class="container">
+      <h2>Joshua</h2>
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <ellipse rx="90" ry="50" cx="100" cy="100" 
+          style="fill:red; stroke:black; stroke-width:3;" />
+      </svg>
+      <h3>Ellipse</h3>
+    </div>
 
-        <!-- Dedrick -->
-        <div class="container">
-            <h2>Dedrick</h2>
-            <svg width="300" height="300" >
-                <circle cx="60" cy="60" r="50" fill="purple" stroke="black" stroke-width="3"/>
-            </svg>
-            <h3>Circle</h3>
-        </div>
-    </section>
-    <section class="contact-form">
-        <h2>Contact Form</h2>
-        <form action="" method="post">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required placeholder="example@gmail.com" autofocus>
-            <br><br>
+    <!-- Alexis -->
+    <div class="container">
+      <h2>Alexis</h2>
+      <svg viewBox="0 0 200 200">
+        <circle cx="100" cy="100" r="50" stroke="white" stroke-width="5" fill="skyblue"/>
+      </svg>
+      <h3>Circle</h3>
+    </div>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required placeholder="password">
-            <br><br>
+    <!-- Dedrick -->
+    <div class="container">
+      <h2>Dedrick</h2>
+      <svg viewBox="0 0 200 200">
+        <circle cx="100" cy="100" r="50" fill="purple" stroke="black" stroke-width="3"/>
+      </svg>
+      <h3>Circle</h3>
+    </div>
+  </section>
 
-            <label for="contact">Contact:</label>
-            <input type="tel" id="contact" name="contact" required placeholder="0000-000-000">
-            <br><br>
+  <!-- Contact Form -->
+  <section class="contact-form">
+    <h2>Contact Form</h2>
+    <form action="" method="post">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="example@gmail.com" autofocus>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required placeholder="password">
+      
+      <label for="contact">Contact:</label>
+      <input type="tel" id="contact" name="contact" required placeholder="0000-000-000">
+      
+      <label for="url">Website:</label>
+      <input type="url" id="url" name="url" required placeholder="https://example.com" >
 
-            <label for="url">Website:</label>
-            <input type="url" id="url" name="url" required placeholder="https://example.com" >
+      <h3>Search</h3>
+      <input list="suggestions" type="search" placeholder="Search...">
+      <datalist id="suggestions">
+        <option value="C++">
+        <option value="Java">
+        <option value="HTML">
+        <option value="CSS">
+        <option value="JavaScript">
+      </datalist>
 
-            <h3>Search</h3>
-            <input list="suggestions" type="search" placeholder="Search...">
-            <datalist id="suggestions">
-                <option value="C++">
-                <option value="Java">
-                <option value="HTML">
-                <option value="CSS">
-                <option value="JavaScript">
-            </datalist>
-            <input type="submit" value="Submit">
-        </form>
-    </section>
+      <input class="btn" type="submit" value="Submit">
+    </form>
+  </section>
 </body>
 </html>

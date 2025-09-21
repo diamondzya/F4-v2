@@ -1,77 +1,128 @@
 body
 {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #d6a8c4;
-    
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #d6a8c4, #b892b0);
 }
 
-
-header h1
+/* Header */
+header
 {
-    margin: 0;
-    font-size: 2.5em;
-    padding: 20px;
-    text-align: center;
-    background-color: #9e6899;
-    margin-bottom: 50px;
-    color: white;
-    width: 100%;
-
+  background-color: #5b3765; 
+  padding: 20px 0;
+  text-align: center;
 }
 
-h2
+.grp
 {
-    color : black
+  margin: 0 auto;
+  font-size: 2.5em;
+  padding: 10px 20px;
+  border: 5px solid #9e6899;
+  border-radius: 12px;
+  background-color: #9e6899;
+  color: white;
+  display: inline-block;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
 }
+
+
 .svg-container
 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    
-    justify-items: center;
-    align-items: center;
-    background-color: #9e6899;
-    border: 3px solid #5b3765;
-    padding: 20px;
-    width: 30%;
-    margin: 12px auto;
-}   
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 1000px;
+  background-color: #9e6899;
+  border: 3px solid #5b3765;
+  border-radius: 12px;
+}
+
 
 .container
 {
-    text-align: center;
-    width: 100%;
-    max-width: 200px;
-    padding: 20px;
-    border: 2px solid black;
-    border-radius: 12px;
-    background-color: white;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .container:hover
 {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.4);
-    cursor: pointer;
+  transform: translateY(-6px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
 }
+
 
 svg
 {
-    width: 120px;
-    height: 120px;
-    padding: 10px;
-    border: 2px solid black;
-    border-radius: 10px;
-    background: linear-gradient(135de, #5b3765, #b0b0b0);
-    transition: transform 0.3s ease, background 0.3s ease;
+  width: 120px;
+  height: 120px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #5b3765, #b0b0b0);
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 svg:hover
 {
-    transform: scale(1.1) rotate(5deg);
-    background: linear-gradient(135deg, #BA88AE, #9E6899);
-    cursor: pointer;
+  transform: scale(1.1) rotate(5deg);
+  background: linear-gradient(135deg, #BA88AE, #9E6899);
+  cursor: pointer;
+}
+
+/* Contact Form */
+.contact-form
+{
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 25px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.contact-form h2
+{
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input {
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.contact-form input:focus {
+  border-color: #9e6899;
+  outline: none;
+  box-shadow: 0 0 6px rgba(158, 104, 153, 0.7);
+}
+
+/* Submit button */
+.btn {
+  background: #9e6899;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #5b3765;
 }
